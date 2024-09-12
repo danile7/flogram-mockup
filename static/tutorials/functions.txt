@@ -1,0 +1,5 @@
+fn main():
+    a: I32 = 2
+    b: I32 = 11
+    sum:= a + b
+    draw(sum)

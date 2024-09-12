@@ -1,0 +1,91 @@
+.file-tree {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0.5em;
+    height: 100%;
+    overflow: auto;
+    transition: background-color 100ms;
+}
+
+/*style reset for nested folders*/
+.file-tree :global(.file-tree) {
+    height: auto !important;
+    padding-block: 0 !important;
+    overflow: visible !important;
+}
+
+:is(.file-tree, li):global(.drag-target),
+:global(.drag-target) .file-tree {
+    background-color: var(--sk-back-3);
+}
+
+li {
+    align-items: stretch;
+    gap: 0.5em;
+    min-height: 2em;
+    overflow: visible;
+    white-space: nowrap;
+    position: relative;
+}
+
+.node {
+    flex: 1 0 auto;
+    min-width: 0;
+}
+
+.node span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hover-group {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding-inline: 0.5rem;
+    align-items: stretch;
+    justify-content: end;
+}
+
+
+li .hover-group {
+    display: none;
+}
+
+li:hover .hover-group,
+li:focus-within .hover-group,
+.hover-group.force {
+    display: flex;
+}
+
+@media (hover: none) {
+    li {
+        min-height: 3em;
+    }
+
+    li .hover-group {
+        display: flex;
+        font-size: 1.75rem;
+    }
+}
+
+li.open button {
+    font-weight: 600;
+}
+
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 0;
+    position: relative;
+}
+
+.hover-group button {
+    padding: 0.3em;
+}

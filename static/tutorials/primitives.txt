@@ -1,0 +1,6 @@
+fn main():
+ answer:I32 = 42
+ y:U8 = 255
+ pi:FP64 = 3.14
+ a:Char = 'A'
+ flag:Bool = TRUE

@@ -1,0 +1,36 @@
+object LinkedList{T}:
+  head: Maybe{Link{Node{T}}}
+
+  fn constructor():
+    self.head = Maybe{Link{Node{T}}}.None
+
+  fn append(value: T):
+    newNode:= Node{T}(value)
+
+    if self.head == Maybe{Link{Node{T}}}.None:
+      self.head = Link{T}(newNode)
+    else:
+      currentNode:= self.head
+
+      while currentNode.nextNode != Maybe{Link{Node{T}}}.None:
+        currentNode = currentNode.nextNode
+        currentNode.nextNode = Link(newNode)
+
+  fn printValues():
+    currentNode:= at(self.head)
+
+    while currentNode != Maybe{Link{Node{T}}}.None:
+      draw("{currentNode.value}, ")
+      if currentNode.nextNode != Maybe{Link{Node{T}}}.None:
+        currentNode = currentNode.nextNode
+      else:
+        currentNode = Maybe{Link{Node{T}}}.None
+
+fn main():
+  linkedList:= LinkedList{String}()
+  linkedList.append("Apple")
+  linkedList.append("Banana")
+  linkedList.append("Orange")
+  draw("Linked List Values:")
+
+  linkedList.printValues()

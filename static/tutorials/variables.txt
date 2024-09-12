@@ -1,0 +1,9 @@
+fn main():
+	pi:= 3.14
+	draw("The value of PI is: {pi}")
+
+	mut temperatureC:= 25.0
+	draw("Current Temperature : {temperatureC}")
+
+	temperatureC= 30.01
+	draw("Updated Temperature : {temperatureC}")

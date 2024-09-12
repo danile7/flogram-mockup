@@ -1,0 +1,14 @@
+fn guessing_game():
+  secret_number:= 42
+  mut guess:= -1
+
+  while guess != secret_number:
+  draw("Enter your guess:")
+  guess:= input_number()
+
+  if guess < secret_number:
+    draw("Too low! Try again.")
+  if guess > secret_number:
+    draw("Too high! Try again.")
+
+  draw("Congratulations! You guessed the secret number.")

@@ -1,0 +1,10 @@
+fn checkAccess(hasTicket: Bool, hasInvitation: Bool):
+  if hasTicket or hasInvitation:
+    draw("Access granted.")
+  else:
+    draw("Access denied.")
+
+fn main():
+    checkAccess(TRUE, TRUE)
+    checkAccess(TRUE, FALSE)
+    checkAccess(FALSE, FALSE)

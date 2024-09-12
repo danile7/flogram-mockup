@@ -1,0 +1,7 @@
+fn main():
+  greeting:= "Hello"
+  name:= "Flogram user"
+  fullGreeting:= "{greeting} {name}!"
+  draw(fullGreeting) # Outputs: Hello Flogram user!
+  length:= size(fullGreeting)
+  draw("Greeting length: {length}") # Outputs: Greeting length: 19

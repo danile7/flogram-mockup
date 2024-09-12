@@ -1,0 +1,8 @@
+fn add(a: I32, b: I32)-> (sum: I32):
+  return a + b
+
+fn main() -> (result: I32):
+  i:= 10
+  j:= 30
+  sum:= add(i,j)
+  draw(sum)

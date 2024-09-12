@@ -1,0 +1,25 @@
+object Point2D:
+  mut x: FP32
+  mut y: FP32
+
+  fn distanceTo(other: Point2D) -> (distance: FP32):
+    lengthX:= self.x - other.x
+    lengthY:= self.y - other.y
+    squareX:= lengthX * lengthX
+    squareY:= lengthY * lengthY
+    sum:= squareX + squareY
+    distance:= sqrt(sum)
+    return distance
+
+  mut fn moveBy(dx: FP32, dy: FP32):
+    self.x = self.x + dx
+    self.y = self.y + dy
+    return
+
+fn main():
+  p1:= Point2D(x = 1.0, y = 2.0)
+  p2:= Point2D(x = 4.0, y = 6.0)
+  draw(p1.distanceTo(p2)) # calculates the distance
+
+  p1.moveBy(3.0, 4.0)         # moves p1
+  draw(p1.distanceTo(p2)) # calculates the new distance

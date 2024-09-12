@@ -1,0 +1,36 @@
+body .splitpanes.default-theme .splitpanes__pane,
+body .splitpanes.default-theme .splitpanes__splitter {
+    background-color: var(--sk-back-4);
+    border: none;
+}
+
+body .splitpanes.default-theme .splitpanes__splitter::before,
+body .splitpanes.default-theme .splitpanes__splitter::after {
+    content: none;
+}
+
+body .default-theme.splitpanes--vertical > .splitpanes__splitter,
+body .default-theme .splitpanes--vertical > .splitpanes__splitter {
+    width: 2px;
+    transition: transform 50ms;
+    transform-origin: center center;
+}
+
+body .default-theme.splitpanes--horizontal > .splitpanes__splitter,
+body .default-theme .splitpanes--horizontal > .splitpanes__splitter {
+    height: 2px;
+    transition: transform 50ms;
+    transform-origin: center center;
+}
+
+body .default-theme.splitpanes--vertical > .splitpanes__splitter:hover,
+body .default-theme .splitpanes--vertical > .splitpanes__splitter:hover {
+    background-color: var(--sk-theme-3);
+    transform: scaleX(2);
+}
+
+body .default-theme.splitpanes--horizontal > .splitpanes__splitter:hover,
+body .default-theme .splitpanes--horizontal > .splitpanes__splitter:hover {
+    background-color: var(--sk-theme-3);
+    transform: scaleY(2);
+}

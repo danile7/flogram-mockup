@@ -1,0 +1,110 @@
+/* @import '@sveltejs/site-kit/styles/index.css'; */
+@import url(lib/css/splitpanes.css);
+@import url(lib/css/color-variables.css);
+@import url(lib/css/codemirror.css);
+@import url(lib/css/bare-min.css);
+@import url(lib/css/mark-down.css);
+@import url(lib/css/components.css);
+
+/*@import url(lib/css/axentix.css);*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.CodeMirror * {
+    /*          ^
+    */
+    font-family: 'Source Code Pro';
+    font-size: 30px;
+}
+
+.keyword {
+    @apply font-semibold text-purple-500;
+}
+
+.variable {
+    @apply font-semibold text-blue-500;
+}
+
+.symbol {
+    @apply font-semibold text-yellow-500;
+}
+
+.type {
+    @apply font-semibold text-green-500;
+}
+
+.literal {
+    @apply font-semibold text-red-500;
+}
+
+.indent {
+    @apply pl-6;
+}
+
+.comment {
+    @apply text-gray-500;
+}
+
+* {
+    @apply box-border;
+    outline : none;
+    /*outline-color: var(--sk-theme-4);*/
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    /*border: 1px solid #ccc; !* Adjust this if you need a specific border style *!*/
+    -webkit-text-fill-color: white !important;
+    /*-webkit-box-shadow: 0 0 0px 1000px transparent inset !important;*/
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #011b22;
+}
+
+
+::-webkit-scrollbar-thumb {
+    width: 12px;
+    background-color: #156c81;
+    transition: 0.3s ease;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    cursor: grab;
+    background-color: #07262e;
+}
+
+.dark ::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+    background-color: rgb(37, 91, 124);
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+::-webkit-scrollbar-track:horizontal {
+    background-color: transparent;
+}
+
+input:focus-visible {
+    /* border: none; */
+    outline: none;
+}

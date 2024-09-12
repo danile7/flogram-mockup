@@ -1,0 +1,35 @@
+object Cache{T}:
+    data: [T]
+    capacity: I32
+
+    fn evict():
+        if not self.data.isEmpty():
+            self.data.removeFirst()
+
+    fn constructor(capacity: I32):
+        self.capacity = capacity
+        self.data = []
+
+    fn put(item: T):
+        if size(self.data) >= self.capacity:
+            self.evict()
+            self.data.append(item)
+
+    fn get(index: I32) -> (item: T):
+        if index >= 0 and index < size(self.data):
+            return self.data[index]
+        else:
+            draw("Invalid index")
+        return
+
+fn main():
+    imageCache:= Cache{Image}(10)
+    imageCache.put(Image("image1.jpg"))
+    imageCache.put(Image("image2.jpg"))
+    img:= imageCache.get(0)
+    draw(img)  # Output: Image("image1.jpg")
+    videoCache:= Cache{Video}(5)
+    videoCache.put(Video("video1.mp4"))
+    videoCache.put(Video("video2.mp4"))
+    vid:= videoCache.get(1)
+    draw(vid)  # Output: Video("video2.mp4")

@@ -1,0 +1,13 @@
+object Point:
+  x: FP32
+  y: I32
+object Arrow:
+  a: Point
+  b: Point
+
+fn main() -> (result: FP32):
+  point:= Point(x = 3.5 , y = 5)
+  arrow:= Arrow( a = Point(x = 12, y = 10), b = Point(x = 11.5, y = 2))
+  sum:= (point.x + arrow.a.x)
+  draw(sum)
+  return sum

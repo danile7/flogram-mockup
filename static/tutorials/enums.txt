@@ -1,0 +1,20 @@
+enum Shape:
+  Circle(radius:FP32)
+  Rectangle(width:FP32, height:FP32)
+  Triangle(base:FP32, height:FP32)
+
+fn area(shape: Shape) -> (result: FP32):
+  if shape == Shape.Circle:
+    return 3.14159 * (shape.radius * shape.radius)
+  if shape == Shape.Rectangle:
+    return (shape.width * shape.height)
+  if shape == Shape.Triangle:
+    return (shape.base * shape.height) / 2.0
+
+fn main():
+  circle:= Shape.Circle(radius: 5.0)
+  rectangle:= Shape.Rectangle(width: 4.0, height: 6.0)
+  triangle:= Shape.Triangle(base: 3.0, height: 8.0)
+  draw("Area of circle: {area(circle)}")
+  draw("Area of rectangle: {area(rectangle)}")
+  draw("Area of triangle: {area(triangle)}")

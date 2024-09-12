@@ -1,0 +1,16 @@
+object Point2D:
+    mut x: I32
+    mut y: I32
+    z:I32 = 0
+
+fn modify_point(mut p: Point2D) -> ():
+    p.x = 50
+    p.y = 60
+
+fn main() -> ():
+    original_point:= Point2D(x = 10, y = 20)
+    draw("Original point (before):", original_point.x, original_point.y) # outputs Original point (before): 10 20
+    mut copied_point:= original_point # Copying the object
+    modify_point(mut copied_point) # Modifying the copied object
+    draw("Original point (after):", original_point.x, original_point.y) # outputs Original point (after): 10 20
+    draw("Copied point (after):", copied_point.x, copied_point.y) # outputs Copied point (after): 50 60

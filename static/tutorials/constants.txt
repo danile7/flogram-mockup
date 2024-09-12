@@ -1,0 +1,4 @@
+fn main ():
+    mut languageName:= "C"
+    languageName = "Flogram"
+    draw("{languageName} is a fun language")

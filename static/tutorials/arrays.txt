@@ -1,0 +1,7 @@
+fn main():
+  array: Array{I32}(size = 3) = [10, 40, 60]
+  val:= array[2] # Accessing the third element
+  length:= size(array) # Getting the length
+  draw("Value at index 2: ", val)
+  #draw("Array: ", array)
+  draw("Length of the array: ", length)

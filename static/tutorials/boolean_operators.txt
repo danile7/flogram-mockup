@@ -1,0 +1,7 @@
+fn main():
+    participantAge:= 16
+    minAge:= 12
+    maxAge:= 20
+
+    # isEligible is TRUE because 16 is between 12 and 20
+    isEligible:= (participantAge > minAge) and (participantAge < maxAge)

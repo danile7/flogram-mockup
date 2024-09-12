@@ -1,0 +1,9 @@
+fn main() -> (result: I32):
+  a:= 9
+  b:= 16
+  if (a < b):
+    draw(a)
+    return a
+  else:
+    draw(b)
+    return b

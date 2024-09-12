@@ -1,0 +1,84 @@
+/* .cm-line {
+	background-color: lime !important;
+} */
+
+.dark .cm-activeLine {
+	background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.light .cm-activeLine {
+	background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.cm-changedLine {
+	background: #46954a26;
+}
+.dark .cm-changedText {
+	background-image: none;
+	background: #46954a26 !important;
+	padding: 0 2px;
+	color: white !important;
+}
+
+.light .cm-changedText {
+	background-image: none;
+	background: #46954a26 !important;
+	padding: 0 2px;
+	color: black !important;
+}
+.cm-scroller .cm-gutters .cm-gutter.cm-changeGutter .cm-activeLineGutter {
+	background: transparent !important;
+}
+.cm-scroller .cm-gutters .cm-gutter.cm-changeGutter .cm-changedLineGutter {
+	background: #46954a4f !important;
+}
+.cm-changedText span {
+	color: rgba(255, 255, 255, 0.8);
+}
+.cm-deletedChunk {
+	background: #ff00003b !important;
+}
+
+.cm-scroller .cm-gutters .cm-gutter.cm-changeGutter .cm-deletedLineGutter {
+	background: #ff00005e !important;
+}
+
+.dark del {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.light del {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.cm-chunkButtons {
+	inset-inline: none;
+	left: 3px;
+	z-index: 1000;
+}
+.cm-chunkButtons button[name='accept'] {
+	background-color: black !important;
+	display: none;
+}
+
+.cm-chunkButtons button[name='reject'] {
+	height: 20px;
+	width: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotateX(180deg);
+	background: #dd44338a !important;
+	transition: 0.2s ease;
+}
+
+.cm-chunkButtons button[name='reject']:hover {
+	transform: rotateX(180deg) scale(1.1);
+}
+
+.cm-scroller .cm-gutters .cm-gutter.cm-changeGutter {
+	position: absolute;
+	width: 100%;
+}

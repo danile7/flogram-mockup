@@ -1,0 +1,5 @@
+fn main():
+  x:= 5  # type inference makes this a I32
+  y:= 2.5 # type inference knows to use FP32
+  sum:= x + I32(y) # We must convert FP32 to I32 as we can only add numbers of the same type
+  draw(sum)

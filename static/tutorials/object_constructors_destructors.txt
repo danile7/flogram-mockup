@@ -1,0 +1,20 @@
+object Counter:
+  mut count: I32
+
+  fn constructor():
+    self.count = 0
+    draw("Counter created")
+
+  fn increment():
+    self.count = self.count + 1
+
+  fn destructor():
+    draw("Counter destroyed, final count: {self.count}")
+
+fn main():
+  counter:= Counter()
+  counter.increment()
+  counter.increment()
+
+  #The Counter object 'counter' goes out of scope here
+  #The destructor is automatically called

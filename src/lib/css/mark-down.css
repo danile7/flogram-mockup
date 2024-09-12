@@ -1,0 +1,31 @@
+.mark-down {
+}
+
+.mark-down .title-filled {
+	background: rgba(0, 0, 0, 0.03);
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1.555rem;
+}
+
+.dark .mark-down .title-filled {
+	background: rgba(255, 255, 255, 0.03);
+}
+
+.mark-down .title-outlined {
+	padding: 10px;
+	font-size: 1.555rem;
+	border-bottom: 1px solid #13a6c7;
+}
+
+.dark .mark-down .title-outlined {
+}
+
+.prose-a\:text-\[22px\] :is(:where(a):not(:where([class~='not-prose'] *))) {
+	font-size: inherit !important;
+}
+
+.prose-strong\:text-charcoal :is(:where(strong):not(:where([class~='not-prose'] *))),
+.prose :where(strong):not(:where([class~='not-prose'] *)) {
+	color: inherit !important;
+}

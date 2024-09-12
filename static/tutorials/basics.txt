@@ -1,0 +1,14 @@
+object Point:
+  x: FP32
+  y: FP32
+
+fn compare (a: Point, b: Point)-> (c: Bool):
+  result: Bool  = (a == b)
+  return result
+
+fn main()-> (equality: Bool):
+  p1:= Point(x = 10, y = 15)
+  p2:= Point( x = 1.5, y = 10.20)
+  equality:= compare(p1,p2)
+  draw(equality)
+  return equality

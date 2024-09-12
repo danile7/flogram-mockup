@@ -1,0 +1,3 @@
+fn main():
+  total: I32 = 5 + 3
+  draw("The total is: ", total)

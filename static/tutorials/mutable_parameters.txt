@@ -1,0 +1,22 @@
+fn increment(mut a: I32):
+  a = a + 1
+
+fn doubleValue(b: I32) -> (b: I32):
+  return b * 2
+
+fn processValue(mut c: I32):
+  c = c * 3
+
+fn main():
+  mut a:= 5
+  b:= 4
+
+  increment(mut a)
+  draw(a)  # outputs 6
+
+  c:= doubleValue(b)
+  draw(b) # outputs 4, b is unchanged
+  draw(c) # outputs 8
+
+  processValue(mut a)
+  draw(a)  # outputs 18

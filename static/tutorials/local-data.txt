@@ -1,0 +1,13 @@
+object Point{T1}:
+  x: T1
+  y: T1
+  fn getX () -> (x: T1):
+    return self.x
+  fn getY () -> (y: T1):
+    return self.y
+
+fn main() -> (c: Point{I32}):
+  a:= Point{I32}(x = 20, y = 11)
+  b:= Point{FP32}(x = 43.5, y = 6.67)
+  x:= a.getX()
+  return a

@@ -1,0 +1,3 @@
+fn main():
+    iVar:= 5   # The inferred type of '5' is I32, a 32 bit integer
+    fpVar:= FP32(iVar)  # Convert to type FP32, a 32 bit floating point number

@@ -1,0 +1,198 @@
+
+:root {
+
+    --sk-back-h: 206;
+    --sk-back-3-hsl: 206, 64%, 98%;
+
+    --sk-back-1: #ffffff;
+    --sk-back-2: #ffffff;
+    --sk-back-3: #f7fafd;
+    --sk-back-4: #e5eef5;
+    --sk-back-5: #c2cdd6;
+    --sk-theme-1: #ff4000;
+    --sk-theme-2: #676779;
+    --sk-theme-3: #42b4ff;
+    --sk-text-1: #212121;
+    --sk-text-2: #454545;
+    --sk-text-3: var(--sk-theme-2);
+    --sk-scrollbar: #0000004d;
+
+ 
+    --sk-theme-1-variant: #ff4000;
+    --sk-theme-2-variant: #676779;
+    --sk-theme-3-variant: #c1e6ff;
+
+    --sk-code-bg: var(--sk-back-3);
+    --sk-code-ts-bg: var(--sk-back-1);
+    --sk-code-base: #5f5c53;
+    --sk-code-comment: #66BB6A;
+    --sk-code-keyword: #81D4FA;
+    --sk-code-function: #6eb0cf;
+    --sk-code-string: #d39847;
+    --sk-code-number: #6897bb;
+    --sk-code-template-string: #d81e18;
+    --sk-code-tags: var(--code-function);
+    --sk-code-important: var(--code-string);
+    --sk-code-diff-base: #00000066;
+    --sk-code-diff-inserted: #008000;
+    --sk-code-diff-removed: #d81e18;
+
+
+    --sk-back-translucent: #0000001a;
+    --sk-text-translucent: #000000b3;
+
+  
+    --sk-nav-height: 6rem;
+    --sk-page-padding-top: 6rem;
+    --sk-page-padding-bottom: 6rem;
+    --sk-page-padding-side: 2.4rem;
+    --sk-thick-border-width: 0.3rem;
+    --sk-border-radius: 0.4rem;
+
+ 
+    --sk-font: 'Overpass', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --sk-font-mono: 'Fira Mono', monospace;
+    --sk-text-xxl: 3.6rem;
+    --sk-text-xl: 3rem;
+    --sk-text-l: 2.4rem;
+    --sk-text-m: 2rem;
+    --sk-text-s: 1.6rem;
+    --sk-text-xs: 1.3rem;
+    --sk-line-max-width: 84rem;
+
+
+  
+    --back: var(--sk-back-1);
+    --back-light: var(--sk-back-3);
+    --back-api: var(--sk-back-4);
+    --prime: var(--sk-theme-1);
+    --second: var(--sk-theme-2);
+    --flash: var(--sk-theme-3);
+    --heading: var(--sk-text-1);
+    --text: var(--sk-text-2);
+    --sidebar-text: rgba(255, 255, 255, 0.9);
+
+    --code-bg: var(--sk-code-bg);
+    --code-base: var(--sk-code-base);
+    --code-comment: var(--sk-code-comment);
+    --code-keyword: var(--sk-code-keyword);
+    --code-function: var(--sk-code-function);
+    --code-string: var(--sk-code-string);
+    --code-number: var(--sk-code-number);
+    --code-template-string: var(--sk-code-template-string);
+    --code-tags: var(--sk-code-tags);
+    --code-important: var(--sk-code-important);
+
+  
+    --nav-h: var(--sk-nav-height);
+    --top-offset: var(--sk-page-padding-top);
+    --side-nav: var(--sk-page-padding-side);
+  
+    --border-w: var(--sk-thick-border-width);
+    --border-r: var(--sk-border-radius);
+
+  
+    --font: var(--sk-font);
+    --font-mono: var(--sk-font-mono);
+    --h1: var(--sk-text-xxl);
+    --h2: var(--sk-text-l);
+    --h3: var(--sk-text-m);
+    --h4: var(--sk-text-s);
+    --h5: var(--sk-text-s);
+    --h6: var(--sk-text-xs);
+    --code-fs: var(--sk-text-xs);
+    --linemax: var(--sk-line-max-width);
+
+  
+    --main-width: 80rem;
+    --sidebar-mid-w: 36rem;
+    --sidebar-large-w: 48rem;
+}
+
+.dark {
+    
+    --sk-back-1: #1a1a1a;
+    --sk-back-2: #2e2e2e;
+    --sk-back-3: #333333;
+    --sk-back-4: hsl(0, 0%, 22%);
+    --sk-back-5: #666666;
+    --sk-back-translucent: hsla(0, 0%, 100%, 0.1);
+    --sk-theme-1: #ff531a;
+    --sk-theme-2: #676779;
+    --sk-theme-3: #42b4ff;
+    --sk-theme-4: #1abbe0;
+    --sk-theme-5: #ffffff33;
+    --sk-text-1: #e6e6e6;
+    --sk-text-2: #cccccc;
+    --sk-text-3: #a6a6a6;
+    --sk-text-translucent: #ffffffe6;
+    --sk-scrollbar: #ffffff4d;
+
+    --sk-back-3-hsl: 0, 0%, 14%;
+    --sk-theme-1-variant: #cc3300;
+    --sk-theme-2-variant: #525260;
+    --sk-theme-3-variant: #0099ff;
+
+    --sk-code-ts-bg: var(--sk-back-2);
+    --sk-code-bg: var(--sk-back-3);
+    --sk-code-base: #c4c1bb;
+    --sk-code-comment: #828282;
+    --sk-code-keyword: #57b5f4;
+    --sk-code-function: #eab095;
+    --sk-code-string: #ccb88f;
+    --sk-code-number: #008000;
+    --sk-code-template-string: #d81e18;
+    --sk-code-tags: var(--code-function);
+    --sk-code-component: #4fc9b1;
+    --sk-code-important: var(--code-string);
+    --sk-code-diff-base: #ffffff66;
+    --sk-code-diff-inserted: #00b300;
+    --sk-code-diff-removed: #d81e18;
+}
+
+.light {
+    --sk-back-h: 206;
+    --sk-back-3-hsl: 206, 64%, 98%;
+
+    --sk-back-1: #ffffff;
+    --sk-back-2: #ffffff;
+    
+    --sk-back-3: hsl(var(--sk-back-3-hsl));
+    --sk-back-4: #e5eef5;
+    --sk-back-5: #c2cdd6;
+    --sk-theme-1: #ff4000;
+    --sk-theme-2: #676779;
+    --sk-theme-3: #42b4ff;
+    --sk-theme-4: #1abbe0;
+    --sk-theme-5: #d9d9d9;
+    --sk-text-1: #212121;
+    --sk-text-2: #454545;
+    --sk-text-3: var(--sk-theme-2);
+    --sk-scrollbar: #0000004d;
+
+   
+    --sk-theme-1-variant: #ff4000;
+    --sk-theme-2-variant: #676779;
+    --sk-theme-3-variant: #42b4ff;
+
+    --sk-code-bg: var(--sk-back-3);
+    --sk-code-ts-bg: var(--sk-back-1);
+    --sk-code-base: #5f5c53;
+    --sk-code-comment: #696969;
+    --sk-code-keyword: #0b69a8;
+    --sk-code-function: #bb5525;
+    --sk-code-string: #856e3d;
+    --sk-code-number: #008000;
+    --sk-code-template-string: #d81e18;
+    --sk-code-tags: var(--code-function);
+    --sk-code-component: #2a8976;
+    --sk-code-important: var(--code-string);
+    --sk-code-diff-base: #00000066;
+    --sk-code-diff-inserted: #008000;
+    --sk-code-diff-removed: #d81e18;
+
+   
+    --sk-back-translucent: #0000001a;
+    --sk-text-translucent: #000000b3;
+}
